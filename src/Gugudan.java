@@ -1,23 +1,13 @@
 public class Gugudan {
-	public static int[] calculate(int times) {
-		int[] result = new int[9];
-		for (int i = 0; i < result.length; i++) {
-			result[i] = times * (i + 1);
-		}
-		return result;
-	}
-	
-	public static void print(int[] result) {
-		for (int i = 0; i < result.length; i++) {
-			System.out.println(result[i]);
-		}
-	}
-	
 	public static void main (String [] a) {
-		for (int i = 2; i <=9; i++) {
-			int[] result = calculate(i);
-			print(result);
-			
+		int[] array = new int[9];
+		for (int k = 2; k <= 9; k ++) {
+			for(int i = 0; i < array.length; i ++) {
+				array[i] = k * (i + 1);
+			}
+			for (int i = 0; i < array.length; i ++) {
+				System.out.println(array[i]);
+			}
 		}
 	}
 }
